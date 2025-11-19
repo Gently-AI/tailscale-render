@@ -6,4 +6,3 @@ wget -q "https://pkgs.tailscale.com/stable/${TS_FILE}" && tar xzf "${TS_FILE}" -
 cp -r tailscale tailscaled /render/
 
 mkdir -p /var/run/tailscale /var/cache/tailscale /var/lib/tailscale
-.
