@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-/render/tailscaled --tun=userspace-networking --socks5-server=localhost:1055 &
+/render/tailscaled --tun=userspace-networking --socks5-server=localhost:1055 --state=/var/lib/tailscale/tailscaled.state --socket=/var/run/tailscale/tailscaled.sock &
 PID=$!
 
 ADVERTISE_ROUTES=${ADVERTISE_ROUTES:-10.0.0.0/8}
